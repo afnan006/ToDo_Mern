@@ -1,0 +1,291 @@
+.card {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  padding: 25px;
+  background-color: #161616;
+  box-shadow: 0px 15px 60px #00eaff;
+  outline: 1px solid #2b9962;
+  border-radius: 10px;
+  transition: transform 0.8s, opacity 0.8s;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.card.front {
+  z-index: 2;
+}
+
+.card.back {
+  transform: rotateY(180deg);
+  z-index: 1;
+  opacity: 0;
+}
+
+.form-container {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-active .card.front {
+  transform: rotateY(180deg);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.register-active .card.back {
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+
+#form-ui {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+}
+
+#form-body {
+  width: 100%;
+}
+
+#welcome-lines {
+  text-align: center;
+  line-height: 1;
+}
+
+#welcome-line-1 {
+  color: #00eaff;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+#welcome-line-2 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 17px;
+}
+
+#input-area {
+  margin-top: 20px;
+}
+
+.form-inp {
+  padding: 11px 25px;
+  background: transparent;
+  border: 1px solid #e3e3e3;
+  line-height: 1;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.form-inp:focus {
+  border: 1px solid #00eaff;
+}
+
+.form-inp input {
+  width: 100%;
+  background: none;
+  font-size: 13.4px;
+  color: #00eaff;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-inp input:focus {
+  outline: none;
+}
+
+#submit-button-cvr {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#submit-button,
+#switch-button {
+  width: calc(50% - 5px);
+  color: #00eaff;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+  padding: 14px 13px 12px 13px;
+  border: 0;
+  outline: 1px solid #00eaff;
+  border-radius: 8px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+#submit-button:hover,
+#switch-button:hover {
+  transition: all ease-in-out 0.3s;
+  background-color: #00eaff;
+  color: #161616;
+}
+
+#forgot-pass {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#forgot-pass a {
+  color: #868686;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#common-google {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#google-button {
+  width: 100%;
+  color: #ffffff;
+  background-color: #dd4b39;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+  padding: 14px 13px 12px 13px;
+  border: none;
+  border-radius: 8px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+#google-button:hover {
+  background-color: #c23321;
+} */
+
+#form-ui {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  padding: 25px;
+  background-color: #161616;
+  box-shadow: 0px 15px 60px #00eaff;
+  outline: 1px solid #2b9962;
+  border-radius: 10px;
+}
+
+#form-body {
+  width: 100%;
+}
+
+#welcome-lines {
+  text-align: center;
+  line-height: 1;
+}
+
+#welcome-line-1 {
+  color: #00eaff;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+#welcome-line-2 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 17px;
+}
+
+#input-area {
+  margin-top: 20px;
+}
+
+.form-inp {
+  padding: 11px 25px;
+  background: transparent;
+  border: 1px solid #e3e3e3;
+  line-height: 1;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.form-inp input {
+  width: 100%;
+  background: none;
+  font-size: 13.4px;
+  color: #00eaff;
+  border: none;
+}
+
+#submit-button-cvr {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#submit-button {
+  width: calc(50% - 5px);
+  color: #00eaff;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+  padding: 14px 13px 12px 13px;
+  border: 0;
+  outline: 1px solid #00eaff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+#submit-button:hover {
+  background-color: #00eaff;
+  color: #161616;
+}
+
+#forgot-pass {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#forgot-pass a {
+  color: #868686;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#common-google {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#google-button {
+  width: 100%;
+  color: #ffffff;
+  background-color: #dd4b39;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+  padding: 14px 13px 12px 13px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+#google-button:hover {
+  background-color: #c23321;
+}
